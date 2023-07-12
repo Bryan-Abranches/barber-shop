@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -109,6 +110,7 @@ i {
   align-items: center;
   justify-content: center;
   padding: 14px;
+  /* Animação */
 }
 .hero h1 {
   text-align: center;
@@ -142,6 +144,7 @@ i {
   }
 }
 
+/* Resposividade */
 @media screen and (max-width: 768px) {
   .hero {
     min-height: 60vh;
@@ -160,6 +163,120 @@ i {
     font-size: 24px;
   }
 }
+/* Sobre - ABAUT */
+.sobre {
+  background-color: #06121e;
+  overflow: hidden;
+  color: #fff;
+}
+
+.sobre-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 34px 14px 64px 14px;
+}
+.sobre-conteudo img {
+  max-width: 570px;
+}
+
+.sobre-conteudo div {
+  flex: 1;
+}
+
+.sobre-descricao h2 {
+  font-size: 38px;
+  margin-bottom: 24px;
+}
+.sobre-descricao p {
+  margin-bottom: 14px;
+  line-height: 150%;
+}
+
+@media screen and (max-width: 768px) {
+  .sobre-conteudo {
+    flex-direction: column;
+  }
+}
+/* Serviços */
+.servicos {
+  background-color: #fff;
+  color: #232224;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 54px 14px;
+}
+
+.servicos-conteudo h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 14px;
+}
+.servicos-conteudo p {
+  line-height: 150%;
+  margin-bottom: 14px;
+  text-align: center;
+  max-width: 780px;
+}
+
+.haircuts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 0 44px 34px 44px;
+}
+
+.haircut {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.453);
+  overflow: hidden;
+}
+.haircut img {
+  width: 100%;
+  max-width: 354px;
+  transition: transform 0.2s;
+}
+
+.haircut img:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.haircut-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 14px;
+  background-color: #fff;
+  z-index: 99;
+}
+.haircut-info button {
+  color: #fff;
+  background-color: #d94149;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 0;
+  cursor: default;
+}
+
+@media screen and (max-width: 800px) {
+  .haircuts {
+    flex-direction: column;
+  }
+  .haircut img {
+    max-width: 740px;
+  }
+}
+/* Mapa  */
 body {
   font-family: "Sora", sans-serif;
   width: 100%;
