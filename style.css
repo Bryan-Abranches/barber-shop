@@ -242,7 +242,7 @@ i {
 }
 .haircut img {
   width: 100%;
-  max-width: 354px;
+  max-width: 400px;
   transition: transform 0.2s;
 }
 
@@ -268,15 +268,82 @@ i {
   cursor: default;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 754px) {
   .haircuts {
     flex-direction: column;
   }
   .haircut img {
-    max-width: 740px;
+    max-width: 800px;
+  }
+  .haircut-info button {
+    font-size: 14px;
+  }
+  .haircut-info strong {
+    font-size: 16px;
   }
 }
-/* Mapa  */
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 34px 0;
+  gap: 34px;
+  color: #fff;
+}
+
+footer-icons {
+  display: flex;
+  gap: 8px;
+  color: #fff;
+}
+
+@media screen and (max-width: 754px) {
+  footer p {
+    font-size: 11.8px;
+  }
+}
+/* =Botão Whatsapp */
+.btn-whastapp {
+  position: fixed;
+  bottom: 13px;
+  right: 20px;
+  z-index: 99;
+}
+.btn-whastapp img {
+  max-width: 74px;
+  transition: transform 0.4s;
+}
+.btn-whastapp img:hover {
+  transform: scale(1.1);
+}
+
+.btn-whatsapp .tooltip {
+  visibility: hidden;
+  position: absolute;
+  width: 120px;
+  top: 8px;
+  left: -144px;
+  padding: 4px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #fff;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.btn-whatsapp:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 754px) {
+  .btn-whastapp {
+    max-width: 54px;
+  }
+}
 body {
   font-family: "Sora", sans-serif;
   width: 100%;
